@@ -7,6 +7,7 @@ import requests
 import os
 import sys
 
+# Download the gif with the TeX formula in txt and save it as the dest_fn file.
 def download_gif(dest_fn: str, txt: str):
     print(f'downloading {dest_fn}...')
 
@@ -22,11 +23,13 @@ def download_gif(dest_fn: str, txt: str):
 
                 handle.write(block)
 
+# Replaces line breaks and tabs with single spaces in TeX expressions
 def process_tex_code(txt: str) -> str:
     txt = ' '.join(txt.split('\n'))
     txt = ' '.join(txt.split('\t'))
     return txt
 
+# Do the main processing
 def process_md_text(md_text: str, imgdir_root) -> str:
     md_text_result = '' #output text
     current_tex = '' 
