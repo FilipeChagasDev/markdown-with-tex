@@ -1,7 +1,8 @@
-# Markdown with TeX script
-# Requires internet connection
+# Markdown with TeX (https://github.com/FilipeChagasDev/markdown-with-tex)
 # By Filipe Chagas (filipe.ferraz0@gmail.com)
 # sep 2020
+
+# ** Requires internet connection **
 
 import requests
 import os
@@ -89,6 +90,9 @@ if __name__ == '__main__':
 
     if not os.path.exists(input_filename) or not os.path.isfile(input_filename):
         raise Exception(f'Invalid origin-file name ({input_filename})')
+        
+    if '/' in output_filename:
+    	raise Exception('The output file must be created in the current working directory. Paths to the output file with sub or super directories are not allowed.')
 
     print('=== Markdown with TeX ===')
     print('By Filipe Chagas (filipe.ferraz0@gmail.com)')

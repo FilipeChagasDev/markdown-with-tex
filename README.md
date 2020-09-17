@@ -23,4 +23,6 @@ You must pass three arguments to the script: (1) the name of the input file, (2)
 python md_tex.py input_filename output_filename image_dir
 ```
 
+**The output file must be created in the current working directory. Paths to the output file with sub or super directories are not allowed.**
+
 See usage example in **src/sample**.

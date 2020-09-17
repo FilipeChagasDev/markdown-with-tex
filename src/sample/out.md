@@ -4,7 +4,7 @@ A quadratic equation is an equation in the form  ![tex1](out_images/tex0.gif) , 
 
 ## Discriminant
 
-The discriminant is the horizontal distance between the vertex of the parabola of a quadratic function and the roots of the equation (when the result of the function is 0). Its definition is:
+In mathematics, the discriminant of a polynomial is a quantity that depends on the coefficients and determines various properties of the roots. Its definition is:
 
  ![tex4](out_images/tex3.gif) 
 
